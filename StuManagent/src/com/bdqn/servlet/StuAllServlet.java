@@ -3,6 +3,7 @@ package com.bdqn.servlet;
 import com.bdqn.bean.Student;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
+@WebServlet("/findAllServlet")
 public class StuAllServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -32,7 +34,7 @@ public class StuAllServlet extends HttpServlet {
         resp.setContentType("text/html; Charset=utf-8");
         PrintWriter writer = resp.getWriter();
         for (Student student : list) {
-            writer.println(student.getSid()+","+student.getName()+","+student.getScore());
+            writer.println("ID:"+student.getSid()+",姓名:"+student.getName()+",成绩:"+student.getScore());
             writer.println("<br/>");
         }
     }
