@@ -24,4 +24,84 @@
         <servlet-name>Servlet02</servlet-name>
         <url-pattern>/servlet02</url-pattern>
     </servlet-mapping>
+
+    <!--servlet03的映射-->
+    <servlet>
+        <servlet-name>Servlet03</servlet-name>
+        <servlet-class>com.bdqn.servlet.Servlet03</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet03</servlet-name>
+        <url-pattern>/servlet03</url-pattern>
+    </servlet-mapping>
+
+    <!--servlet04的映射-->
+    <servlet>
+        <servlet-name>Servlet04</servlet-name>
+        <servlet-class>com.bdqn.servlet.Servlet04</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet04</servlet-name>
+        <!--1.全名的匹配        -->
+        <!-- <url-pattern>/servlet04</url-pattern>-->
+        <!--2.通配符的匹配        -->
+        <!-- <url-pattern>/servlet/*</url-pattern>-->
+        <!--3.通配符+后缀名的方案        -->
+        <url-pattern>*.do</url-pattern>
+        <!-- 三种路径的优先级 1 > 2 > 3       -->
+    </servlet-mapping>
+
+    <!-- servlet05的映射-->
+    <servlet>
+        <servlet-name>Servlet05</servlet-name>
+        <servlet-class>com.bdqn.servlet.Servlet05</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet05</servlet-name>
+        <url-pattern>/hy</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Servlet05</servlet-name>
+        <url-pattern>/fhy</url-pattern>
+    </servlet-mapping>
+
+    <!--Servlet06的映射-->
+    <servlet>
+        <servlet-name>Servlet06</servlet-name>
+        <servlet-class>com.bdqn.servlet.Servlet06</servlet-class>
+        <!-- 初始化了一些参数与参数的值       -->
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>lisi</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>23</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet06</servlet-name>
+        <url-pattern>/servlet06</url-pattern>
+    </servlet-mapping>
+
+    <!-- 全局的参数   servletContext作为应用的上下文对象,servlet-->
+    <context-param>
+        <param-name>address</param-name>
+        <param-value>xian</param-value>
+    </context-param>
+
+    <!--servlet07的映射-->
+    <servlet>
+        <servlet-name>Servlet07</servlet-name>
+        <servlet-class>com.bdqn.servlet.Servlet07</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet07</servlet-name>
+        <url-pattern>/servlet07</url-pattern>
+    </servlet-mapping>
 </web-app>

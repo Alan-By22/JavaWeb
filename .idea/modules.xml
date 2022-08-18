@@ -3,10 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWeb.iml" filepath="$PROJECT_DIR$/.idea/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StuManagent/StuManagent.iml" filepath="$PROJECT_DIR$/StuManagent/StuManagent.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb01/javaweb01.iml" filepath="$PROJECT_DIR$/javaweb01/javaweb01.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb02/javaweb02.iml" filepath="$PROJECT_DIR$/javaweb02/javaweb02.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb03/javaweb03.iml" filepath="$PROJECT_DIR$/javaweb03/javaweb03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/request-servlet/request-servlet.iml" filepath="$PROJECT_DIR$/request-servlet/request-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/servletweb01/servletweb01.iml" filepath="$PROJECT_DIR$/servletweb01/servletweb01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servletweb02/servletweb02.iml" filepath="$PROJECT_DIR$/servletweb02/servletweb02.iml" />
     </modules>
   </component>
 </project>

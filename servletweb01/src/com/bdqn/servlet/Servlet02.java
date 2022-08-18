@@ -1,5 +1,6 @@
 package com.bdqn.servlet;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,12 @@ import java.io.IOException;
  * 3.web.xml---配置映射
  */
 public class Servlet02 extends HttpServlet {
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        System.out.println("servlet对象创建了");
+    }
+
     //get
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,5 +28,10 @@ public class Servlet02 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req,resp);
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("servlet对象销毁了");
     }
 }
