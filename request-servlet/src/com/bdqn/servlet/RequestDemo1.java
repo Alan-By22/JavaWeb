@@ -13,6 +13,9 @@ public class RequestDemo1 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        req.setAttribute("name","lisi");
+
         //1.关于路径
         /*
         getContextPath()  获得虚拟目录
