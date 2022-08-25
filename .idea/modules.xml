@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWeb.iml" filepath="$PROJECT_DIR$/.idea/JavaWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/StuManagent/StuManagent.iml" filepath="$PROJECT_DIR$/StuManagent/StuManagent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StuManagent2/StuManagent2.iml" filepath="$PROJECT_DIR$/StuManagent2/StuManagent2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" filepath="$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb01/javaweb01.iml" filepath="$PROJECT_DIR$/javaweb01/javaweb01.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb02/javaweb02.iml" filepath="$PROJECT_DIR$/javaweb02/javaweb02.iml" />
