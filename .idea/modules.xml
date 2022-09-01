@@ -6,9 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/StuManagent/StuManagent.iml" filepath="$PROJECT_DIR$/StuManagent/StuManagent.iml" />
       <module fileurl="file://$PROJECT_DIR$/StuManagent2/StuManagent2.iml" filepath="$PROJECT_DIR$/StuManagent2/StuManagent2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" filepath="$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/el-demo/el-demo.iml" filepath="$PROJECT_DIR$/el-demo/el-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filter-demo/filter-demo.iml" filepath="$PROJECT_DIR$/filter-demo/filter-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb01/javaweb01.iml" filepath="$PROJECT_DIR$/javaweb01/javaweb01.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb02/javaweb02.iml" filepath="$PROJECT_DIR$/javaweb02/javaweb02.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb03/javaweb03.iml" filepath="$PROJECT_DIR$/javaweb03/javaweb03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc-base/jdbc-base.iml" filepath="$PROJECT_DIR$/jdbc-base/jdbc-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsp_demo/jsp_demo.iml" filepath="$PROJECT_DIR$/jsp_demo/jsp_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/request-servlet/request-servlet.iml" filepath="$PROJECT_DIR$/request-servlet/request-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/response-servlet/response-servlet.iml" filepath="$PROJECT_DIR$/response-servlet/response-servlet.iml" />

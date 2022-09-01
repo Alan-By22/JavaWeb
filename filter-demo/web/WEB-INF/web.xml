@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--配置Filter-->
+    <!--    <filter>-->
+    <!--        <filter-name>filter1</filter-name>-->
+    <!--        <filter-class>com.bdqn.filter.MyFilter</filter-class>-->
+    <!--        &lt;!&ndash;servletConfig   filterConfig&ndash;&gt;-->
+    <!--    </filter>-->
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>filter1</filter-name>-->
+    <!--        &lt;!&ndash;拦截所有请求&ndash;&gt;-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+
+
+    <!--        <filter>-->
+    <!--            <filter-name>filter2</filter-name>-->
+    <!--            <filter-class>com.bdqn.filter.MyFilter2</filter-class>-->
+    <!--            &lt;!&ndash;servletConfig   filterConfig&ndash;&gt;-->
+    <!--            <init-param>-->
+    <!--                <param-name>name</param-name>-->
+    <!--                <param-value>lisi</param-value>-->
+    <!--            </init-param>-->
+    <!--        </filter>-->
+    <!--        <filter-mapping>-->
+    <!--            <filter-name>filter2</filter-name>-->
+    <!--            &lt;!&ndash;拦截所有请求&ndash;&gt;-->
+    <!--            <url-pattern>/servlet1</url-pattern>-->
+    <!--        </filter-mapping>-->
+
+    <!--    <filter>-->
+    <!--        <filter-name>myfilter3</filter-name>-->
+    <!--        <filter-class>com.bdqn.filter.MyFilter3</filter-class>-->
+    <!--    </filter>-->
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>myfilter3</filter-name>-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+    <!--    <filter>-->
+    <!--        <filter-name>myfilter4</filter-name>-->
+    <!--        <filter-class>com.bdqn.filter.MyFilter4</filter-class>-->
+    <!--    </filter>-->
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>myfilter4</filter-name>-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+
+    <filter>
+        <filter-name>myfilter6</filter-name>
+        <filter-class>com.bdqn.filter.MyFilter6</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>myfilter6</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+        <!--过滤请求：默认值。-->
+        <dispatcher>REQUEST</dispatcher>
+        <!--过滤全局错误页面：当由服务器调用全局错误页面时，过滤器工作-->
+        <dispatcher>ERROR</dispatcher>
+        <!--过滤请求转发：当请求转发时，过滤器工作。-->
+        <dispatcher>FORWARD</dispatcher>
+        <!--过滤请求包含：当请求包含时，过滤器工作。它只能过滤动态包含，jsp的include指令是静态包 含-->
+        <dispatcher>INCLUDE</dispatcher>
+        <!--过滤异步类型，它要求我们在filter标签中配置开启异步支持-->
+        <dispatcher>ASYNC</dispatcher>
+    </filter-mapping>
+
+
+
+
+
+
+
+    <!--配置servlet1-->
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.bdqn.servlet.MyServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <!--配置servlet2-->
+    <servlet>
+        <servlet-name>servlet2</servlet-name>
+        <servlet-class>com.bdqn.servlet.MyServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+
+    <!--全局错误页面-->
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+</web-app>
