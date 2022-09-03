@@ -23,13 +23,13 @@ public class LoginServlet extends HttpServlet {
         //2.判断数据
         if (username == null || "".equals(username)) {
             //直接跳转
-            resp.sendRedirect("/stu/login.jsp");
+            resp.sendRedirect(req.getContextPath() + "/login.jsp");
             return;
         }
         //3.登陆成功!将用户的信息保存到session中
         req.getSession().setAttribute("username", username);
         //4.跳转首页
-        resp.sendRedirect("/stu/index.jsp");
+        resp.sendRedirect(req.getContextPath() + "/index.jsp");
     }
 
     @Override

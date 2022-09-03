@@ -11,7 +11,7 @@
     <title>登陆</title>
 </head>
 <body>
-<form action="/stu/loginServlet" method="get">
+<form action="${pageContext.request.contextPath}/loginServlet" method="get">
     用户名:<input type="text" name="username"><br/>
     密&nbsp;&nbsp;&nbsp;码:<input type="password" name="password"><br/>
     <input type="submit" value="登陆">

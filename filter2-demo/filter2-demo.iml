@@ -9,7 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -21,9 +20,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Tomcat 9.0.29" level="application_server_libraries" />
-    <orderEntry type="library" name="jstl-1.2 (2)" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.37-bin (2)" level="project" />
-    <orderEntry type="library" name="servlet-api" level="project" />
-    <orderEntry type="library" name="jsp-api" level="project" />
   </component>
 </module>
