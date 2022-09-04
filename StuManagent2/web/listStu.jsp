@@ -7,6 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>展示的页面</title>
@@ -28,21 +29,18 @@
         <th>成绩</th>
         <th>修改||删除</th>
     </tr>
+    <c:if test="" var="">
+
+    </c:if>
     <c:forEach items="${students}" var="stu" varStatus="vs">
         <tr>
             <th>${vs.count}</th>
             <th>${stu.sid}</th>
             <th>${stu.name}</th>
             <th>${stu.score}</th>
-            <th><a href="${pageContext.request.contextPath}">修改</a></th>
+            <th><a href="${pageContext.request.contextPath}/findById?sid=${stu.sid}">修改</a></th>
         </tr>
     </c:forEach>
-
-
-
-
-
-
 
 <%--    <%--%>
 <%--        //从域对象中session取值--%>
