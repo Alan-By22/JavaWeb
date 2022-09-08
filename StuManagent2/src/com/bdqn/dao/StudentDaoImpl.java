@@ -10,7 +10,6 @@ import com.bdqn.bean.Student;
 import com.bdqn.utils.JDBCUtils;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
@@ -23,7 +22,7 @@ public class StudentDaoImpl implements StudentDao {
         int i = 0;
         try {
             //获得连接
-            connection = JDBCUtils.getConnection();
+            connection = JDBCUtils.connection();
             //2.执行sql对象
             statement = connection.createStatement();
             //3.

@@ -6,6 +6,7 @@ package com.bdqn.utils;
  * @描述信息
  */
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
