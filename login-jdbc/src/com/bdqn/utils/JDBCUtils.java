@@ -1,4 +1,4 @@
-package com.bdqn.util;
+package com.bdqn.utils;
 
 /*
  * @创建人   zby

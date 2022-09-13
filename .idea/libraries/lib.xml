@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jdbc_DataSource/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc_DataSource/lib/druid-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc_DataSource/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc_DataSource/lib/mchange-commons-java-0.2.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc_DataSource/lib/mysql-connector-java-5.1.37-bin.jar!/" />
+      <root url="file://$PROJECT_DIR$/jdbc_DataSource/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/jdbc_DataSource/lib" recursive="false" />
+  </library>
+</component>

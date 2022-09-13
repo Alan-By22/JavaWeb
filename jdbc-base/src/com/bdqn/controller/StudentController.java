@@ -40,7 +40,7 @@ public class StudentController {
 
         Date date = new Date(System.currentTimeMillis());
         //创建学生
-        Student student = new Student(null, "韩2雪", 18, date);
+        Student student = new Student(null, "韩雪", 18, date);
         System.out.println(student);
         //2.
         int i = studentService.saveStudent(student);
@@ -58,7 +58,7 @@ public class StudentController {
         //学生对象
         Student student = studentService.findById(4);
         //修改学生对象
-        student.setName("憨憨");
+        student.setName("憨憨4");
         //修改
         int i = studentService.updateStudent(student);
         if (i > 0) {
@@ -72,7 +72,7 @@ public class StudentController {
     //删除
     @Test
     public void deleteStudentById() {
-        int i = studentService.deleteStudentById(3);
+        int i = studentService.deleteStudentById(1);
         if (i > 0) {
             System.out.println("删除成功");
         } else {
