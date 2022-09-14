@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+1.mapper:跟标签
+2.namespace:名称空间
+-->
+<mapper namespace="studentMapper">
+    <!--
+       1.select:查询的标签,insert,update,delete
+       2.id:唯一语句
+       3.resultType: 结果集映射的对象的类型(全类名)
+       -->
+    <select id="findAll" resultType="student">
+        select * from student;
+    </select>
+    <!--    根據id来查询
+    resultType : 结果映射的对象的类型
+    parameterType: 参数对象的类型
+    -->
+    <select id="findOne" resultType="student" parameterType="int">
+        select *
+        from student
+        where id = #{id};
+    </select>
+
+    <!--添加insert-->
+    <insert id="addStudent" parameterType="student">
+        insert into student
+        values (null, #{name}, #{age});
+    </insert>
+
+    <!--修改-->
+    <update id="updateStu" parameterType="student">
+        update student
+        set name = #{name},
+            age  = #{age}
+        where id = #{id};
+    </update>
+
+    <!--删除-->
+    <delete id="delStudent" parameterType="int">
+        delete
+        from student
+        where id = #{id}
+    </delete>
+
+    <!--  select * from student where name like concat('%',#{name},'%'); -->
+<!--
+#{}与${}的区别
+1.#{}预编译sql可以避免sql注入,${}不是
+2.#{}是占位符 ?  ${},属于字符串的拼接
+3.#{},生成的sql里边的参数默认添加单引号,${},不会给参数添加单引号
+4.${},注意使用的地方,一般作为动态的排序字段使用
+5.输入的参数都是实体类型,获取结果都是 ${属性.属性} #{属性.属性}
+-->
+
+    <!--模糊查询-->
+    <select id="findAllLike" parameterType="string" resultType="student">
+        select * from student where name like concat('%',#{name},'%');
+    </select>
+
+</mapper>

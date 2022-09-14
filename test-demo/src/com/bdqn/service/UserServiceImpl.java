@@ -2,7 +2,7 @@ package com.bdqn.service;
 
 import com.bdqn.dao.UserDaoImpl;
 import com.bdqn.dao.userDao;
-import com.bdqn.pojo.User;
+import com.bdqn.bean.User;
 
 import java.util.List;
 

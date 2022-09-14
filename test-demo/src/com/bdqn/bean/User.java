@@ -1,4 +1,4 @@
-package com.bdqn.pojo;
+package com.bdqn.bean;
 
 public class User {
     private int id;

@@ -1,6 +1,6 @@
 package com.bdqn.dao;
 
-import com.bdqn.pojo.User;
+import com.bdqn.bean.User;
 import com.bdqn.util.JDBCUtils;
 
 import java.sql.Connection;

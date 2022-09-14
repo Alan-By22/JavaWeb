@@ -1,6 +1,6 @@
 package com.bdqn.web;
 
-import com.bdqn.pojo.User;
+import com.bdqn.bean.User;
 import com.bdqn.service.UserServiceImpl;
 import com.bdqn.service.userService;
 
