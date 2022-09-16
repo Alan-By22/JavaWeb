@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="pagehelper-5.1.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mybatis02/lib/pagehelper-5.1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mybatis02/lib/jsqlparser-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
