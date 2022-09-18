@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/login-jdbc/login-jdbc.iml" filepath="$PROJECT_DIR$/login-jdbc/login-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis01/mybatis01.iml" filepath="$PROJECT_DIR$/mybatis01/mybatis01.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis02/mybatis02.iml" filepath="$PROJECT_DIR$/mybatis02/mybatis02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis03/mybatis03.iml" filepath="$PROJECT_DIR$/mybatis03/mybatis03.iml" />
       <module fileurl="file://$PROJECT_DIR$/request-servlet/request-servlet.iml" filepath="$PROJECT_DIR$/request-servlet/request-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/response-servlet/response-servlet.iml" filepath="$PROJECT_DIR$/response-servlet/response-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet-01/servlet-01.iml" filepath="$PROJECT_DIR$/servlet-01/servlet-01.iml" />

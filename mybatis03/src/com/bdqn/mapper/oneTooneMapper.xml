@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bdqn.mapper.OneToOneMapper">
+    <!--配置表的字段与实体的映射-->
+    <resultMap id="oneToone" type="card"><!--id:唯一标识-->
+        <id column="cid" property="id"/>
+        <result column="number" property="number"/>
+        <!--
+               id:主建
+               result :普通的字段
+                   column:数据库表字段
+                   property:对应对象的属性
+               association 配置被包含对象的映射
+               property : 被包含对象的属性名
+               javaType : 被包含对象的数据类型
+               -->
+        <association property="p" javaType="person">
+            <id column="pid" property="id"/>
+            <result column="name" property="name"/>
+            <result column="age" property="age"/>
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultMap="oneToone">
+        select c.id cid, number, p.id pid, name, age
+        from card c,
+             person p
+        where c.pid = p.id
+    </select>
+
+</mapper>

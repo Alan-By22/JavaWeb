@@ -7,13 +7,8 @@
     <properties resource="db.properties"/>
     <!--添加别名-->
     <typeAliases>
-
+        <package name="com.bdqn.bean"/>
     </typeAliases>
-
-    <!--分页插件注意位置-->
-    <plugins>
-        <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
-    </plugins>
 
     <!--配置数据源的环境 多数据源的配置-->
     <environments default="mysql"> <!--指定默认的数据源-->
@@ -32,7 +27,8 @@
     <!--加载映射-->
 
     <mappers>
-        <mapper resource="StudentMapping.xml"/>
-        <!--        <package name="com.bdqn.mapper/>-->
+            <mapper resource="com/bdqn/mapper/oneTooneMapper.xml"/>
+            <mapper resource="com/bdqn/mapper/oneTomanyMapper.xml"/>
+            <mapper resource="com/bdqn/mapper/manyTomanyMapper.xml"/>
     </mappers>
 </configuration>

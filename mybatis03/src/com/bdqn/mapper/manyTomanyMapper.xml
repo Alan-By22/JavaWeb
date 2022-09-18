@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bdqn.mapper.ManyToManyMapper">
+
+    <resultMap id="manytomany" type="student">
+        <id column="sid" property="id"/>
+        <result column="sname" property="name"/>
+        <result column="age" property="age"/>
+        <collection property="courses" ofType="course">
+            <id column="cid" property="id"/>
+            <result column="cname" property="name"/>
+        </collection>
+    </resultMap>
+    <select id="findAll" resultMap="manytomany">
+        select s.id sid, s.name sname, age, c.id cid, c.name cname
+        from student s,
+             course c,
+             stu_cr sc
+        where s.id = sc.sid
+          and c.id = sc.cid;
+    </select>
+</mapper>
