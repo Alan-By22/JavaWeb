@@ -9,6 +9,11 @@
 <html>
 <head>
     <title>登陆</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <span>${msg}</span>

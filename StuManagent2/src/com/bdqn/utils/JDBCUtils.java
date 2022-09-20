@@ -1,17 +1,15 @@
 package com.bdqn.utils;
 
-/*
- * @创建人   zby
- * @创建时间 2022/9/8---15:08
- * @描述信息
- */
 
 import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
+/**
+ * @author 11752
+ */
 public class JDBCUtils {
-    //私有构造
+    /** 私有构造*/
     private JDBCUtils() {
     }
 
@@ -41,7 +39,7 @@ public class JDBCUtils {
         }
     }
 
-    //获得连接的方法
+    /** 获得连接的方法*/
     public static Connection connection() {
         try {
             connection = DriverManager.getConnection(url, username, password);
@@ -51,7 +49,7 @@ public class JDBCUtils {
         return connection;
     }
 
-    //释放资源
+    /** 释放资源*/
     public static void close(Connection connection, Statement statement, ResultSet rs) {
         if(connection != null){
             try {

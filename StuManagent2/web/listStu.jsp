@@ -21,6 +21,7 @@
 </head>
 <body>
 <h2>学生信息展示</h2>
+${code}
 <table border="1px">
     <tr>
         <th>序号</th>
@@ -29,9 +30,7 @@
         <th>成绩</th>
         <th>修改||删除</th>
     </tr>
-    <c:if test="" var="">
 
-    </c:if>
     <c:forEach items="${students}" var="stu" varStatus="vs">
         <tr>
             <th>${vs.count}</th>
@@ -42,25 +41,6 @@
         </tr>
     </c:forEach>
 
-<%--    <%--%>
-<%--        //从域对象中session取值--%>
-<%--        ArrayList<Student> students = (ArrayList<Student>) session.getAttribute("students");--%>
-<%--        //遍历--%>
-<%--        for (Student student : students) {--%>
-
-<%--    %>--%>
-<%--    <tr>--%>
-<%--        <td><%=student.getSid()%>--%>
-<%--        </td>--%>
-<%--        <td><%=student.getName()%>--%>
-<%--        </td>--%>
-<%--        <td><%=student.getScore()%>--%>
-<%--        </td>--%>
-<%--    </tr>--%>
-
-<%--    <%--%>
-<%--        }--%>
-<%--    %>--%>
 </table>
 </body>
 </html>

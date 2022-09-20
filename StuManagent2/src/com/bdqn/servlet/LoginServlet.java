@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author 11752
+ */
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
     @Override

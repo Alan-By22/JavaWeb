@@ -20,9 +20,12 @@ import java.util.List;
  * @描述信息
  */
 
+/**
+ * @author 11752
+ */
 @WebServlet("/findAllStuServlet")
 public class FindAllStuServlet extends HttpServlet {
-    //service
+    /** 注入service*/
     private StudentServiceImpl studentService = new StudentServiceImpl();
 
     @Override
@@ -34,21 +37,7 @@ public class FindAllStuServlet extends HttpServlet {
         req.getSession().setAttribute("students",list);
         //跳转到查询页面
         resp.sendRedirect(req.getContextPath()+"/listStu.jsp");
-//        //读取文件
-//        BufferedReader reader = new BufferedReader(new FileReader("D:\\stu.txt"));
-//        //创建集合
-//        ArrayList<Student> list = new ArrayList<>();
-//        String len;
-//        while ((len = reader.readLine()) != null) {
-//            String[] split = len.split(",");
-//            Student student = new Student(split[0], split[1], Integer.parseInt(split[2]));
-//            //存到集合中
-//            list.add(student);
-//        }
-//        //3.将查询到的数据--保存到域对象中
-//        req.getSession().setAttribute("students",list);
-//        //跳转到查询页面
-//        resp.sendRedirect("/stu/listStu.jsp");
+
     }
 
     @Override

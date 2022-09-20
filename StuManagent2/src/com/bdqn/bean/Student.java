@@ -1,11 +1,8 @@
 package com.bdqn.bean;
 
-/*
- * @创建人   zby
- * @创建时间 2022/8/25---22:59
- * @描述信息
+/**
+ * @author 11752
  */
-
 public class Student {
     private String sid;
     private String name;

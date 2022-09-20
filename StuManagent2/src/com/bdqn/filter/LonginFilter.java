@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/*检查登陆处理*/
+/** 检查登陆处理
+ * @author 11752*/
 @WebFilter(value = {"/addStu.jsp", "/findAllStuServlet"})
 public class LonginFilter implements Filter {
     @Override
@@ -29,7 +30,6 @@ public class LonginFilter implements Filter {
         if (username == null || "".equals(username)) {
             //没有登陆
             session.setAttribute("msg", "请先登陆");
-            //request.getContextPath()动态编码 -----/stu
             response.sendRedirect(request.getContextPath() + "/login.jsp");
         }
         //放行

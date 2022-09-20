@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//全局的乱码处理
+/** 全局的乱码处理*/
 @WebFilter("/*")
 public class EncodingFilter implements Filter {
     @Override

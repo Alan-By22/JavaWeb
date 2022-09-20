@@ -1,16 +1,13 @@
 package com.bdqn.dao;
 
-/*
- * @创建人   zby
- * @创建时间 2022/9/2---12:11
- * @描述信息
- */
 
 import com.bdqn.bean.Student;
 
 import java.util.List;
 
-//数据持久层
+/**
+ * @author 11752
+ */ //数据持久层
 public interface StudentDao {
     //1.添加
     int saveStudent(Student student);
