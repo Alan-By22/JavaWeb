@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+</head>
+<body>
+<form autocomplete="off">
+    姓名：<input type="text" id="username"><span id="uSpan"></span><br>
+    密码：<input type="password" id="password"><br>
+    <input type="submit" value="注册">
+</form>
+</body>
+<script>
+    //1.为姓名添加一个事件--失去焦点
+    document.getElementById("username").onblur = function () {
+        //1.获得请求对象
+        let xmlhttp = new XMLHttpRequest();
+        //2.打开连接----服务端----发送数据
+        let username = document.getElementById("username").value;
+        xmlhttp.open("GET","ajaxServlet?username="+username,true);
+        //3.发送请求
+        xmlhttp.send();
+        //4.
+        xmlhttp.onreadystatechange = function () {
+            //判断请求是否成功
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                document.getElementById("uSpan").innerHTML=xmlhttp.responseText;
+            }
+        }
+    }
+
+
+</script>
+</html>
