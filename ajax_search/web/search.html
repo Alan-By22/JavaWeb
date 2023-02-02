@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <style type="text/css">
+        .content {
+            width: 643px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        input[type='text'] {
+            width: 530px;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        input[type='button'] {
+            width: 100px;
+            height: 46px;
+            background: #38f;
+            border: 0;
+            color: #fff;
+            font-size: 15px
+        }
+
+        .show {
+            position: absolute;
+            width: 535px;
+            height: 100px;
+            border: 1px solid #999;
+            border-top: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<form autocomplete="off">
+    <div class="content">
+        <img src="img/logo.jpg">
+        <br/><br/>
+        <input type="text" id="username">
+        <input type="button" value="搜索一下">
+        <!--用于显示联想的数据-->
+        <div id="show" class="show"></div>
+    </div>
+</form>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $("#username").keyup(function (){
+        //1.获得输入的值
+       let username =  $("#username").val();
+       //2.判断是否为空
+        if(username == null || username == ""){
+            //隐藏
+            $("#show").hide();
+            return;
+        }
+
+        //3.异步刷新
+        $.ajax({
+            url : "searchServlet",
+            data: "username="+username,
+            dataType: "json",
+            type: "post",
+            success : function (data){
+                //data-json--数组
+                let names = "";
+                $(data).each(function (i,e){
+                    names+="<div>"+e.name+"</div>";
+                })
+                $("#show").html(names);
+                $("#show").show();
+            }
+        })
+    })
+</script>
+</html>

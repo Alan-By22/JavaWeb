@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/StuManagent/StuManagent.iml" filepath="$PROJECT_DIR$/StuManagent/StuManagent.iml" />
       <module fileurl="file://$PROJECT_DIR$/StuManagent2/StuManagent2.iml" filepath="$PROJECT_DIR$/StuManagent2/StuManagent2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax_01/ajax_01.iml" filepath="$PROJECT_DIR$/ajax_01/ajax_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajax_search/ajax_search.iml" filepath="$PROJECT_DIR$/ajax_search/ajax_search.iml" />
       <module fileurl="file://$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" filepath="$PROJECT_DIR$/cookie-Demo/cookie-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/el-demo/el-demo.iml" filepath="$PROJECT_DIR$/el-demo/el-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/filter-demo/filter-demo.iml" filepath="$PROJECT_DIR$/filter-demo/filter-demo.iml" />
